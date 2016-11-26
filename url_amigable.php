@@ -1,7 +1,7 @@
 <?php
-
 function urls_amigables($url) {
-    $url = strtolower($url);
+    $url = strtolower($url); // lo resducco a minusculas 
+    $url = trim($url); // quito los espacios de inicio  fin 
     //Rememplazamos caracteres especiales latinos
     $find = array('á', 'é', 'í', 'ó', 'ú', 'ñ');
     $repl = array('a', 'e', 'i', 'o', 'u', 'n');
