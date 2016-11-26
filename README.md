@@ -1,7 +1,18 @@
 # url_amigable
 Url amigables
 
+Coje un texto y lo transforma en una url amigable 
 
+```
+ese es el texto
+```
+Ahora transformado:
+
+```
+ese-es-el-texto
+```
+
+```
 <?php
 
 function urls_amigables($url) {
@@ -19,3 +30,5 @@ function urls_amigables($url) {
     $url = preg_replace($find, $repl, $url);
     return $url;
 }
+
+```
